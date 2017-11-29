@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test10_input.html</title>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btnOK').click(function(){
+			var inputText = $('#sample').val();
+			alert('입력된 값:'+inputText);
+			
+			$('#sample').val('zzzzzzzzzzzzzzz');
+		})
+	})
+</script>
+</head>
+<body>
+	<form>
+	<input type="text" id="sample" size="20">
+	<input type="button" value="확인" id="btnOK">
+	</form>
+</body>
+</html>

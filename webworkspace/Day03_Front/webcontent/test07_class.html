@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test07_class.html</title>
+
+<style type="text/css">
+	.a{
+		background-color: yellow;
+	}
+	
+	.b{
+		border: 3px double red;
+	}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('h1').mouseover(function(){
+// 			$(this).addClass('b');
+			$(this).toggleClass('b');
+		});
+		
+		$('h1').mouseout(function(){
+// 			$(this).removeClass('b');
+			$(this).toggleClass('b');
+		});
+	})
+</script>
+
+</head>
+<body>
+	<h1 class='a'>마우스를 올려보세요.</h1>
+	<h1>마우스를 올려보세요.</h1>
+	<h1>마우스를 올려보세요.</h1>
+	<h1>마우스를 올려보세요.</h1>
+</body>
+</html>
+
+

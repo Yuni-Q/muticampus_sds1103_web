@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test06_click.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	var count=0;
+	$(function(){
+		$('#btnCount').click(function(){
+			count++;
+			$('span').text(count);
+		});
+	})
+</script>
+</head>
+<body>
+	<h1>Count:<span></span></h1>
+	<button id="btnCount">누르시오.</button>
+</body>
+</html>

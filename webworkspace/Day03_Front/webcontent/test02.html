@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test02.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 선택자 실습
+		// 1. 전체선택자
+// 		$('*').css('color','red');
+		
+		// 2. 태그이름 선택자
+// 		$('h1').css('textDecoration',"underline");
+		
+		// 3. 클래스속성 선택자
+		$('.a').css('backgroundColor','yellow');
+		
+		// 4. 아이디속성 선택자
+		$('#target').css('fontSize','30px');
+		
+		// 5. 인접한자식 선택자
+		$('ul > li').css('color','magenta');
+		
+		// 6. 자손 선택자
+		$('ul li').css('fontStyle','italic');
+	})
+</script>
+</head>
+<body>
+	<h1>jQuery 선택자 실습</h1>
+	<h1>jQuery 선택자 실습2</h1>
+	<ul>
+		<li>java</li>
+		<li class="a">jsp</li>
+		<li class="a">html</li>
+		<li class="a" id="target">css</li>
+		<li>javaScript</li>
+		<ol>
+			<li>android</li>
+			<li>iphone</li>
+		</ol>
+	</ul>
+</body>
+</html>
+

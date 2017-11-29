@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test07.html</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var li = document.getElementsByTagName('li');
+// 		li[2].style.backgroundColor='YELLOW';
+
+		var colors = ['RED','ORANGE','YELLOW','GREEN'];
+		var subs = ['자바','제이에스피','스프링','안드로이드'];
+		
+		for(var i=0; i<4; i++){
+			li[i].style.backgroundColor = colors[i];
+			li[i].innerHTML = subs[i];
+		}
+	}
+</script>
+</head>
+<body>
+	<ul>
+		<li>Java</li>
+		<li>JSP</li>
+		<li>Spring</li>
+		<li>Android</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test03_each.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var colors = ['red','orange','yellow','green','blue'];
+		
+		$('h1').each(function(index,item){
+			$(item).css('backgroundColor',colors[index]);
+		})
+		
+		$('h1').find('span').css('textDecoration','underline');
+	})
+</script>
+</head>
+<body>
+	<h1>빨강</h1>
+	<h1><span>주황</span></h1>
+	<h1>노랑</h1>
+	<h1><span>초록</span></h1>
+	<h1>파랑</h1>
+	
+	<span>마젠타</span>
+</body>
+</html>
+
+
+

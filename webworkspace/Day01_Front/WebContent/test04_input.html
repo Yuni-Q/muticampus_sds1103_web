@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test04_input.html</title>
+</head>
+<body>
+	<form>
+		ID:
+		<input type="text" placeholder="아이디 입력" 
+			required="required"/><br>
+		PW:
+		<input type="password" placeholder="패스워드 입력" 
+			required="required"><br>
+		<input type="submit" value="로그인">
+	</form>
+		<hr>
+		
+	색상:<input type="color"/><br>
+	날짜:<input type="date"/><br>
+	시간:<input type="time"/><br>
+	범위:<input type="range"/><br>
+	
+	
+	후보제공:<input type="url" list="url_list" autocomplete="on"/><br>
+	
+	<datalist id="url_list">
+		<option label="네이버" value="http://www.naver.com"/>
+		<option label="다음" value="http://www.daum.net"/>
+		<option label="구글" value="http://www.google.co.kr"/>
+	</datalist>
+	<hr/>
+	
+	자동완성:
+	<input type="text" list="keywords" 
+				autocomplete="on" placeholder="자동완성">
+	
+	<datalist id="keywords">
+		<option label="네이버" value="Naver"/>
+		<option label="다음" value="Daum"/>
+		<option label="사과" value="Apple"/>
+	</datalist>
+	자동초점:<input type="text" autofocus="autofocus"/>
+	
+	<hr>
+	<input type="tel" placeholder="000-0000-0000">
+	
+	
+
+</body>
+</html>

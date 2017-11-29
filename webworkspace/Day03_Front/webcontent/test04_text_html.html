@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test04_text_html.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	// jQuery의 text함수와 html함수.
+	// 두 함수 공통점 : html요소에서 데이터를 읽어오거나 집어넣을 수 있음.
+	$(function(){
+		var text = $('div').text(); // 아래 요소에서 값 가져오기
+		console.log(text);	
+		
+		var html = $('div').html(); // 아래 요소에서 값 가져오기
+		console.log(html);
+		// 차이점 1: 값을 가져오는 용도에서 대상이 여러개 일 때
+		//		text()함수는 다가져오고 html()함수는 첫번째 하나만 가져옴.
+/////////////////////////////////////////////////////////////////////////		
+// 		$('div').text('<h1>hello!!!</h1>'); // 아래 요소에 데이터 집어넣기
+		$('div').html('<h1>hello!!!</h1>'); // 아래 요소에 데이터 집어넣기
+		// 차이점 3: 값을 집어넣을 때 text()는 태그를 그냥 문자자체로 집어넣고
+		//		html()는 태그를 반영해서 집어넣음.
+	})
+	
+</script>
+</head>
+<body>
+	<div>test1</div>
+	<div>test2</div>
+	<div>test3</div>
+	
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test11_selector2.html</title>
+<style type="text/css">
+/* 	자식선택자 */
+	tr > th{
+	/* 	tr의 직계 자식 요소들 중 th를 선택하시오 */
+		background-color: pink;
+	}
+	
+/* 	자손선택자 */
+	tr li{
+	/* 	tr 내부의 모든 요소들 중 li 라는 이름의 요소를 선택하시오 */
+		text-decoration: underline;
+	}
+	
+	tr .a{
+	/* 	tr 내부의 모든 요소들 중 a클래스 속성을 가진 요소를 선택하시오 */
+		background-color: yellow;
+	}
+	
+	.b{
+	/* 	전체 요소들 중 b 클래스 속성을 가진 요소를 선택하시오 */
+		font-size: 20pt;
+	}
+	
+</style>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<th>점수</th>
+		</tr>
+		<tr>
+			<td class="a">양유진</td>
+			<td>
+				<ul>
+					<li>수학 100</li>
+					<li class="a">국어 100</li>
+					<li>과학 100</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>
+				<ul>
+					<li>수학 100</li>
+					<li>국어 200</li>
+					<li class="a">과학 90</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>김자바</td>
+			<td>
+				<ul>
+					<li class="a b">수학 10</li>
+					<li>국어 10</li>
+					<li>과학 10</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="a">송중기</td>
+			<td>
+				<ul>
+					<li>수학 300</li>
+					<li>국어 300</li>
+					<li>과학 300</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<ul>
+		<li class="a">수학 100</li>
+		<li class="b">국어 100</li>
+		<li>과학 100</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test11.html</title>
+<script type="text/javascript">
+	// 자바스크립트에서 객체 만들기 심플예제
+	var obj = {
+			name: "양유진", 
+			age: 20, 
+			score1: 100, 
+			score2: 90 };
+	
+	// 흔히 말하는 json데이터는 아래와 같은 자바스크립트 객체배열 형태를 말함.
+	var myJson = [	{
+						"title":"power java",
+						"price":"20000",
+						"pub":"Infinity books"
+					},
+					{
+						"title":"자바의 정석",
+						"price":"15000",
+						"pub":"멀티캠퍼스"
+					},
+					{
+						"title":"나는 자바를 공부한적이 없어요",
+						"price":"30000",
+						"pub":"가메출판사"
+					}];
+	window.onload = function() {
+		var bodyContent = "";
+		
+		bodyContent += "이름:"+ obj['name'] +"<br>";
+		bodyContent += "나이:"+ obj['age'] +"<br>";
+		bodyContent += "점수1:"+ obj['score1'] +"<br>";
+		bodyContent += "점수2:"+ obj['score2'] +"<br>";
+		
+		document.write(bodyContent);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

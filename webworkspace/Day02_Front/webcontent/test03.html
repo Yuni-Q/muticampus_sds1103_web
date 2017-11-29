@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test03.html</title>
+<script type="text/javascript">
+	window.onload = function(){
+		// 이 function은 아래의 body가 화면에 다 그려진 후 실행됨.
+		alert('이 경고창은 body 그려진 후에 팝업:'+n);
+	}
+
+	// function 바깥의 문장은 현재 위치가 body보다 위에 있으므로
+	// body 보다 먼저 실행됨.
+	var n = 100;
+	alert('이 경고창은 body가 그려지기 전에 팝업:'+n);
+	
+	n++;
+	
+</script>
+</head>
+<body>
+	<h1>이 내용이 나오는 시점 ?</h1> 
+</body>
+</html>

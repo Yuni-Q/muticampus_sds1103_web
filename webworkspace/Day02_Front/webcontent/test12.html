@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test12.html</title>
+
+<script type="text/javascript">
+	function tick(){
+		var nowH1 = document.getElementById("now");
+		nowH1.innerHTML = new Date().toLocaleString();
+	}
+
+	window.onload = function() {
+// 		setInterval(function(){
+// 			alert("ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ");
+// 		}, 1000);
+		setInterval(tick, 1000);
+	}
+</script>
+</head>
+<body>
+	<h1 id="now">하하핫</h1>
+</body>
+</html>

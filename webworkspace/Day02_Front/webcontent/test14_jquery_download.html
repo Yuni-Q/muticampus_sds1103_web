@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test13_jquery_cdn.html</title>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+// 자바스크립트 버전
+// 	window.onload=function(){}
+///////////////////////////////////////////
+// jQuery 버전
+// 	$(document).ready(function(){})
+///////////////////////////////////////////
+// jQuery 축소버전
+	var count=0;
+	$(function(){
+		$('#btn').click(function(){
+			$('#btn').text('눌렸네요:'+count);
+			count++;
+		})
+	})
+</script>
+</head>
+<body>
+	<button id="btn">눌러보세요~</button>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test05_attr.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	// attr() : 대상 요소의 속성값을 읽어오거나 설정하는 함수
+	$(function(){
+		//attr()안에 속성이름만 적으면 해당 속성값 가져오기 작업
+		var firstSrc = $('#firstImg').attr('src');
+		console.log("첫번째 이미지:"+firstSrc);
+		
+		//attr()안에 속성이름,값 을 적으면 해당 속성값을 집어넣는 작업.
+		$('#secondImg').attr('src','images/Penguins.jpg');
+		
+		//$(선택대상).click(function(){}):대상이 클릭됐을 때 function실행됨.
+		$('#changeBtn').click(function(){
+			// width와 height 값 두개를 가지는 객체
+			var size = {'width':'200', 'height':'100'};
+			$('#secondImg').attr(size);
+		});
+	})
+</script>
+</head>
+<body>
+	<div><img id="firstImg" src="images/Koala.jpg" width="300" height="200"/></div>
+	<div><img id="secondImg"></div>
+	<button id="changeBtn">크기변경</button>
+</body>
+</html>
+
+
+
+
+
+

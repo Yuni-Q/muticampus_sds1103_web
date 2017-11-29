@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test10_selector.html</title>
+<style type="text/css">
+/*	선택자{속성이름1:값1; 속성이름2:값2; ..... }*/
+
+/* (전체 선택자) */
+*{ 
+ 	background-color: yellow; 
+} 
+
+/* 태그 이름으로 선택자 */
+h1, h2{
+	background-color: lime;
+}
+
+/* 클래스 속성으로 선택자 */
+.a{
+	color: red;
+}
+
+/* 아이디 속성으로 선택자 */
+#target{
+	font-style: italic;
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	<h1>css 선택자 공부</h1>
+	<h2>css 선택자 공부</h2>
+	<h2 class="a">css 선택자 공부</h2>
+	<h3 class="a">css 선택자 공부</h3>
+	<h4>css 선택자 공부</h4>
+	<h5>css 선택자 공부</h5>
+	<h6 id="target">css 선택자 공부</h6>
+</body>
+</html>

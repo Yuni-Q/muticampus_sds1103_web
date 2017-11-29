@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test05.html</title>
+<script type="text/javascript">
+var randNum;
+var count;
+	window.onload = function(){
+		var btnStart = document.getElementById('btnStart');
+		btnStart.onclick = function(){
+			count=1;
+			var area = document.getElementById('area');
+			randNum = 1+Math.abs(Math.floor(Math.random()*10));
+		}
+		var checkNum = document.getElementById('checkNum');
+		checkNum.onclick = function(){
+			var inNum = document.getElementById('inNum').value;
+			
+			if(randNum==inNum){
+				area.innerHTML = count+"번만에 맞췄습니다.";	
+			}else if(inNum>randNum){
+				area.innerHTML ="입력한 숫자가 더 큽니다.";
+				count++;
+			}else{
+				area.innerHTML ="입력한 숫자가 더 작습니다.";
+				count++;
+			}
+		}
+	}	
+</script>
+</head>
+<body>
+	<button id="btnStart">난수추첨</button>
+	<p id="area"></p>
+	<input type="number" id="inNum" value="10">
+	<button id="checkNum">확인</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test13_jquery_cdn.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+// 자바스크립트로만 작성한 버전
+	window.onload = function(){
+		var btn = document.getElementById("btn");
+		btn.onclick = function(){
+			alert("눌렸습니다! by raw javaScript...");
+		}
+	}
+///////////////////////////////////////////////////////////////////
+	$(function(){
+		$('#btn').click(function(){
+			alert("눌렸습니다! by jQuery!");
+		})
+	})
+</script>
+</head>
+<body>
+	<button id="btn">눌러보세요~</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test08.html</title>
+<script type="text/javascript">
+	// 	getElementById(id값)
+	// 	getElementsByName(name속성 값)
+	// 	getelementsByTagName(태그이름)
+	window.onload = function(){
+		var h1 = document.getElementById('target');
+		var h1_msg = h1.innerHTML; // h1태그사이의 데이터 얻어오기
+		alert(h1_msg);
+		h1.innerHTML = '테스트 끝남'; // h1태그 사이의 값을 변경
+	}
+	
+</script>
+</head>
+<body>
+	<h1 id="target">테스트중</h1>
+	<p>테스트중2</p>
+</body>
+</html>
+
+
+

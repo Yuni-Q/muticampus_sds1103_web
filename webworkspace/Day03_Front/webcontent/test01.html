@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test01.html</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+// 자바스크립트 버전
+	window.onload = function(){
+		var h1_arr = document.getElementsByTagName("h1");
+		for(var i=0; i<3; i++){
+			h1_arr[i].style.backgroundColor = "ORANGE";
+		}
+	}
+///////////////////////////////////////////////////////////
+// jQuery 버전
+	$(function(){
+		$('h1').css('color','blue');
+	})
+</script>
+
+</head>
+<body>
+	<h1>java</h1>
+	<h1>jsp</h1>
+	<h1>jQuery</h1>
+</body>
+</html>

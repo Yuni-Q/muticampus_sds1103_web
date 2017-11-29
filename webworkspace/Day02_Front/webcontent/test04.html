@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test04.html</title>
+<script type="text/javascript">
+	window.onload=function(){
+		// body 내부의 문서 내용을 아래 내용으로 덮어쓰기
+		document.write('이 내용이 새로 쓰여집니다.<br>');
+		
+		alert('test alert!!');
+		
+		document.body.innerHTML += '이 내용을 이어붙임';
+		
+		console.log('콘솔에 메세지 띄워보기');
+	};
+</script>
+</head>
+<body>
+ 	<h1>original contents</h1>
+</body>
+</html>

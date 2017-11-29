@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>test05.html</title>
+<script type="text/javascript">
+	// 변수에 자료형이 지정되지 않으므로 아무거나 담을 수 있음.
+	var a = 100;
+	a = "Hello";
+
+	b = 3.14; // 선언없이 갑자기 변수 만들어서 쓰기
+
+	// document 기본객체를 활용해서
+	// body 내부에 임의의 내용 쓰기
+	document.write('<img src="image/Koala.jpg" width="300" height="200">');
+	
+	// 위에서 쓴 body의 내용에 아래내용 이어 붙이기
+	document.body.innerHTML += '변수 b의 값은:'+b;
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

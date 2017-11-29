@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test09.html</title>
+<script type="text/javascript">
+	func1(); // 문제없이 실행됨.
+	func2(10,20); // 실행 안됨.	
+	
+	function func1(){
+		console.log('func1 호출됨!!');
+	}
+	
+	var func2 = function(x, y){
+		console.log('func2 호출됨!!');
+	}
+	
+</script>
+</head>
+<body>
+	<button onclick="func1()">func1 버튼</button>
+	<button onclick="func2(10,20)">func2 버튼</button>
+</body>
+</html>

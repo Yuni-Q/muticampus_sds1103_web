@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test09_remove.html</title>
+<style type="text/css">
+	div{
+		width: 400;
+		height:400;
+		background-color: aqua;
+	}
+</style>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {		
+		var img="<img src='images/Koala.jpg' width='200' height='200'/>";
+
+		$('#empty').click(function() {
+			$('div').empty();
+		})
+		$('#remove').click(function() {
+			$('div').remove();
+		})
+		$('#append').click(function() {
+			$('div').append(img);
+		})
+	})
+</script>
+</head>
+<body>
+	<button id="empty">empty</button>
+	<button id="remove">remove</button>
+	<button id="append">append</button>
+
+	<div>
+		<h1>test</h1>
+	</div>
+</body>
+</html>
